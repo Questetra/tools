@@ -1,0 +1,74 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    link(href="css/material.min.css" rel="stylesheet")
+    //link(href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css" rel="stylesheet")
+    link(href="css/tools.css" rel="stylesheet")
+    link(rel="stylesheet" href="css/ui-decorator/jquery.q_guide_panel_maker.min_.css")
+    title
+      |UI Decorator - Questetra Tools
+  body
+    header.navbar.navbar-dark.navbar-full.bg-primary.doc-navbar-default.fixed-top
+      button.navbar-toggler(aria-controls="navdrawerLeft" aria-expanded="false" aria-label="Toggle Navdrawer" data-target="#navdrawerLeft" data-toggle="navdrawer")
+        span.navbar-toggler-icon
+      a.navbar-brand.mr-auto(href="index.html")
+        |Questetra Tools
+    div#navdrawerLeft.navdrawer(aria-hidden="true" tabindex="-1")
+      div.navdrawer-content
+        div.navdrawer-header
+          a.navbar-brand.px-0(href="index.html")
+            |Questetra Tools
+        nav.navdrawer-nav
+          a.nav-item.nav-link.active(href="ui-decorator.html")
+            i.material-icons.mr-2
+              |style
+            |UI Decorator
+          //div.navdrawer-divider
+          //p.navdrawer-subheader
+          //  |Navdrawer subheader
+    div.drawer-container-layout
+      div.container-fluid
+        div.row
+          div.col
+            nav(aria-label="breadcrumb")
+             ol.breadcrumb
+               li.breadcrumb-item(aria-current="page")
+                 a(href="index.html")
+                   |Home
+               li.breadcrumb-item.active(aria-current="page")
+                 |UI Decorator
+            h2
+              i.material-icons.mr-2
+                |style
+              |UI Decorator
+        div.row
+          div.col
+            p(style="margin:40px 0 40px 0;")
+              |「ガイドパネル」でメリハリのあるタイトルを表示するHTMLを作成できます
+        div.row
+          div.col
+            div#GuidePanelMaker(style="margin:40px 0 80px 0;")
+        div.row
+          div.col
+            h2
+              |使い方
+            style
+              |.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+            div.embed-container
+              iframe(src='https://www.youtube.com/embed//YMOs5A06jLQ' frameborder='0' allowfullscreen)
+
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
+    script(src="js/material.min.js")
+    //script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js")
+    script(src="js/responsiveDrawer.js")
+    script(src="js/ui-decorator/jquery.q_guide_panel_maker.min_.js")
+    script
+      |(function($) {
+      |  $("#GuidePanelMaker").q_guide_panale_maker();
+      |})(jQuery);

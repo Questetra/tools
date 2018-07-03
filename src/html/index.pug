@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport")
+    link(href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    //link(href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css" rel="stylesheet")
+    link(href="css/material.min.css" rel="stylesheet")
+    link(href="css/tools.css" rel="stylesheet")
+    title
+      |Questetra Tools
+  body
+    header.navbar.navbar-dark.navbar-full.bg-primary.doc-navbar-default.fixed-top
+      button.navbar-toggler(aria-controls="navdrawerLeft" aria-expanded="false" aria-label="Toggle Navdrawer" data-target="#navdrawerLeft" data-toggle="navdrawer")
+        span.navbar-toggler-icon
+      a.navbar-brand.mr-auto(href="index.html")
+        |Questetra Tools
+    div#navdrawerLeft.navdrawer(aria-hidden="true" tabindex="-1")
+      div.navdrawer-content
+        div.navdrawer-header
+          a.navbar-brand.px-0(href="index.html")
+            |Questetra Tools
+        nav.navdrawer-nav
+          a.nav-item.nav-link(href="ui-decorator.html")
+            i.material-icons.mr-2
+              |style
+            |UI Decorator
+          //div.navdrawer-divider
+          //p.navdrawer-subheader
+          //  |Navdrawer subheader
+    div.drawer-container-layout
+      div.jumbotron
+        h1.display-4
+          |Questetra Tools
+        p.lead
+          |This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+      div.container-fluid
+        div.row
+          div.col
+            hoge
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
+    //script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js")
+    script(src="js/material.min.js")
+    script(src="js/responsiveDrawer.js")
