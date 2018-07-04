@@ -1,3 +1,13 @@
+$primary: (
+  color: #009900,
+  dark:  darken(#009900, 10%),
+  light: lighten(#009900, 10%)
+);
+$link-color : darken(#009900, 10%);
+
+@import "node_modules/daemonite-material/assets/scss/material.scss";
+
+// custom
 body{
   padding-top:56px;
   padding-bottom:56px;
@@ -21,4 +31,6 @@ body{
 }
 .jumbotron{
   border-radius: 0;
+  background-color: darken(#009900, 10%);
+  color:white;
 }

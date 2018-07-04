@@ -5,23 +5,21 @@ html(lang="en")
     meta(content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport")
     link(href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(href="css/material.min.css" rel="stylesheet")
-    //link(href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css" rel="stylesheet")
-    link(href="css/tools.css" rel="stylesheet")
+    link(href="css/material-custom.min.css" rel="stylesheet")
     link(rel="stylesheet" href="css/ui-decorator/jquery.q_guide_panel_maker.min_.css")
     title
-      |UI Decorator - Questetra Tools
+      |UI Decorator - Questetra Support Tools
   body
     header.navbar.navbar-dark.navbar-full.bg-primary.doc-navbar-default.fixed-top
       button.navbar-toggler(aria-controls="navdrawerLeft" aria-expanded="false" aria-label="Toggle Navdrawer" data-target="#navdrawerLeft" data-toggle="navdrawer")
         span.navbar-toggler-icon
       a.navbar-brand.mr-auto(href="index.html")
-        |Questetra Tools
+        |Questetra Support Tools
     div#navdrawerLeft.navdrawer(aria-hidden="true" tabindex="-1")
       div.navdrawer-content
         div.navdrawer-header
           a.navbar-brand.px-0(href="index.html")
-            |Questetra Tools
+            |Questetra Support Tools
         nav.navdrawer-nav
           a.nav-item.nav-link.active(href="ui-decorator.html")
             i.material-icons.mr-2
@@ -70,5 +68,8 @@ html(lang="en")
     script(src="js/ui-decorator/jquery.q_guide_panel_maker.min_.js")
     script
       |(function($) {
-      |  $("#GuidePanelMaker").q_guide_panale_maker();
+      |  $("#GuidePanelMaker").q_guide_panale_maker({
+      |    'title': 'お問い合わせ内容',
+      |    'disc': '質問や相談の内容を入力してください。 ファイルを添付することもできます。'
+      |});
       |})(jQuery);

@@ -5,22 +5,20 @@ html(lang="en")
     meta(content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport")
     link(href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    //link(href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css" rel="stylesheet")
-    link(href="css/material.min.css" rel="stylesheet")
-    link(href="css/tools.css" rel="stylesheet")
+    link(href="css/material-custom.min.css" rel="stylesheet")
     title
-      |Questetra Tools
+      |Questetra Support Tools
   body
     header.navbar.navbar-dark.navbar-full.bg-primary.doc-navbar-default.fixed-top
       button.navbar-toggler(aria-controls="navdrawerLeft" aria-expanded="false" aria-label="Toggle Navdrawer" data-target="#navdrawerLeft" data-toggle="navdrawer")
         span.navbar-toggler-icon
       a.navbar-brand.mr-auto(href="index.html")
-        |Questetra Tools
+        |Questetra Support Tools
     div#navdrawerLeft.navdrawer(aria-hidden="true" tabindex="-1")
       div.navdrawer-content
         div.navdrawer-header
           a.navbar-brand.px-0(href="index.html")
-            |Questetra Tools
+            |Questetra Support Tools
         nav.navdrawer-nav
           a.nav-item.nav-link(href="ui-decorator.html")
             i.material-icons.mr-2
@@ -32,13 +30,29 @@ html(lang="en")
     div.drawer-container-layout
       div.jumbotron
         h1.display-4
-          |Questetra Tools
+          |Questetra Support Tools
         //p.lead
         //  |This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
       div.container-fluid
         div.row
           div.col
-            hoge
+            div.card-deck
+              div.card
+                div.card-body
+                  h5.card-title
+                    i.material-icons.mr-2
+                      |style
+                    |UI Decorator
+                  p.card-text
+                    |「ガイドパネル」でメリハリのあるタイトルを表示するHTMLを作成できます
+                  a.btn.btn-primary(href="ui-decorator.html")
+                    |使用する
+                div.card-body
+                  p.card-text
+                    small.text-muted
+                      |関連情報
+                  a.card-link(href="https://questetra.zendesk.com/hc/ja/articles/360002245252-M213")
+                      |M213: 処理フォーム画面をデコレーションする（HTML/JavaScript）
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
