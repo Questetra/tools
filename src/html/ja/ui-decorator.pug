@@ -5,8 +5,8 @@ html(lang="en")
     meta(content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport")
     link(href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(href="css/material-custom.min.css" rel="stylesheet")
-    link(rel="stylesheet" href="css/ui-decorator/jquery.q_guide_panel_maker.min_.css")
+    link(href="../css/material-custom.min.css" rel="stylesheet")
+    link(rel="stylesheet" href="../css/ui-decorator/jquery.q_guide_panel_maker.min_.css")
     title
       |UI Decorator - Questetra Support Tools
   body
@@ -46,14 +46,14 @@ html(lang="en")
         div.row
           div.col
             p(style="margin:40px 0 40px 0;")
-              |You can create HTML for displaying the sharp title in "Guide Panel".
+              |「ガイドパネル」でメリハリのあるタイトルを表示するHTMLを作成できます
         div.row
           div.col
             div#GuidePanelMaker(style="margin:40px 0 80px 0;")
         div.row
           div.col
             h2
-              |How to Use
+              |使い方
             style
               |.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
             div.embed-container
@@ -64,30 +64,12 @@ html(lang="en")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
     script(src="js/material.min.js")
     //script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js")
-    script(src="js/responsiveDrawer.js")
-    script(src="js/ui-decorator/jquery.q_guide_panel_maker.min_.js")
+    script(src="../js/responsiveDrawer.js")
+    script(src="../js/ui-decorator/jquery.q_guide_panel_maker.min_.js")
     script
       |(function($) {
       |  $("#GuidePanelMaker").q_guide_panale_maker({
-      |  'h' : 10,
-      |  's' : 3,
-      |  'v' : 4,
-      |  'section_setting':'Settings',
-      |  'title_label' : 'Title',
-      |  'title': 'Inquiry Contents',
-      |  'size_label' : 'Title font size',
-      |  'color_label' : 'Title color',
-      |  'bg_label' : 'Title background color',
-      |  'padding_label' : 'Padding',
-      |  'padding_help' : 'The Space between the Title bar and the Title character',
-      |  'margin_label' : 'Margin',
-      |  'margin_help' : 'The space under the Title bar',
-      |  'disc_label' : 'Note',
-      |  'disc': 'Please enter contents of questions or consultations. You can attach files as well.',
-      |  'title_help' : 'Leave blank if you do not need',
-      |  'disc_help' : 'Leave blank if you do not need. You can also insert a line break.',
-      |  'section_preview' : 'Preview',
-      |  'section_code' : 'Code',
-      |  'code_help' : 'Copy the code below and use it'
-      |  });
+      |    'title': 'お問い合わせ内容',
+      |    'disc': '質問や相談の内容を入力してください。 ファイルを添付することもできます。'
+      |});
       |})(jQuery);

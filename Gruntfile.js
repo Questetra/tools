@@ -36,6 +36,12 @@ module.exports = function(grunt) {
           },
           {
             "docs/ui-decorator.html": "src/html/ui-decorator.pug"
+          },
+          {
+            "docs/ja/index.html": "src/html/ja/index.pug"
+          },
+          {
+            "docs/ja/ui-decorator.html": "src/html/ja/ui-decorator.pug"
           }
         ]
       }
