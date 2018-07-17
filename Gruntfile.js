@@ -18,6 +18,13 @@ module.exports = function(grunt) {
             src: ["responsiveDrawer.js"],
             dest: "docs/js/",
             filter: "isFile"
+          },
+          {
+            expand: true,
+            cwd: "src/js/trix/",
+            src: ["*.js", "*.css"],
+            dest: "docs/js/trix/",
+            filter: "isFile"
           }
         ]
       }
@@ -42,6 +49,9 @@ module.exports = function(grunt) {
           },
           {
             "docs/ja/ui-decorator.html": "src/html/ja/ui-decorator.pug"
+          },
+          {
+            "docs/ja/html-editor.html": "src/html/ja/html-editor.pug"
           }
         ]
       }

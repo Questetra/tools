@@ -43,27 +43,40 @@ html(lang="en")
               i.material-icons.mr-2
                 |style
               |ガイドパネル デコレータ
-        div.row
+        div.row(style="margin-bottom:40px;")
           div.col
-            p(style="margin:40px 0 40px 0;")
+            p(style="margin:20px 0 20px 0;")
               |「ガイドパネル」でメリハリのあるタイトルを表示するHTMLを作成できます
-        div.row
+            p(style="margin:20px 0 20px 0;")
+              a(href="#usage")
+                i.material-icons.mr-2
+                  |keyboard_arrow_down
+                |使い方
+        div.row(style="margin-bottom:40px;")
           div.col
-            div#GuidePanelMaker(style="margin:40px 0 80px 0;")
-        div.row
+            div#GuidePanelMaker
+        div.row(style="margin-bottom:40px;")
           div.col
-            h2
+            h2#usage
               |使い方
             style
               |.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
             div.embed-container
               iframe(src='https://www.youtube.com/embed//YMOs5A06jLQ' frameborder='0' allowfullscreen)
+        div.row(style="margin-bottom:40px;")
+          div.col
+            h2#usage
+              |関連情報
+            ul
+              li
+                a(href="https://questetra.zendesk.com/hc/ja/articles/360002245252-M213")
+                  |M213: 処理フォーム画面をデコレーションする（HTML/JavaScript）
 
     script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
     script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js")
-    script(src="js/material.min.js")
-    //script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js")
+    script(src="../js/material.min.js")
+
     script(src="../js/responsiveDrawer.js")
     script(src="../js/ui-decorator/jquery.q_guide_panel_maker.min_.js")
     script

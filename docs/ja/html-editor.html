@@ -1,0 +1,126 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="initial-scale=1, shrink-to-fit=no, width=device-width" name="viewport"><link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Roboto+Mono:300,400,700|Roboto+Slab:300,400,700" rel="stylesheet"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" type="text/css" href="../js/trix/trix.css"><script type="text/javascript" src="../js/trix/trix.js"></script><link href="../css/material-custom.min.css" rel="stylesheet"><style>button.trix-button[data-trix-attribute="red"]{
+ background-color:#D32F2F;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="red"]{
+ color:rgba(255,255,255,1);
+}
+button.trix-button[data-trix-attribute="pink"]{
+ background-color:#C2185B;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="pink"]{
+ color:rgba(255,255,255,1);
+}
+button.trix-button[data-trix-attribute="purple"]{
+ background-color:#7B1FA2;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="purple"]{
+ color:rgba(255,255,255,1);
+}
+button.trix-button[data-trix-attribute="indigo"]{
+ background-color:#303F9F;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="indigo"]{
+ color:rgba(255,255,255,1);
+}
+button.trix-button[data-trix-attribute="blue"]{
+ background-color:#1976D2;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="blue"]{
+ color:rgba(255,255,255,1);
+}
+button.trix-button[data-trix-attribute="cyan"]{
+ background-color:#0097A7;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="cyan"]{
+ color:rgba(255,255,255,1);
+}
+button.trix-button[data-trix-attribute="green"]{
+ background-color:#388E3C;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="green"]{
+ color:rgba(255,255,255,1);
+}
+button.trix-button[data-trix-attribute="orange"]{
+ background-color:#EF6C00;
+ color:rgba(255,255,255,0.5);
+}
+button.trix-button.trix-active[data-trix-attribute="orange"]{
+ color:rgba(255,255,255,1);
+}
+.trix-button--icon-heading-1, .trix-button--icon-quote, .trix-button--icon-code{
+ display:none;
+}</style><title>シンプル HTMLエディタ- Questetra Support Tools</title></head><body><header class="navbar navbar-dark navbar-full bg-primary doc-navbar-default fixed-top"><button class="navbar-toggler" aria-controls="navdrawerLeft" aria-expanded="false" aria-label="Toggle Navdrawer" data-target="#navdrawerLeft" data-toggle="navdrawer"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand mr-auto" href="index.html">Questetra Support Tools</a></header><div class="navdrawer" id="navdrawerLeft" aria-hidden="true" tabindex="-1"><div class="navdrawer-content"><div class="navdrawer-header"><a class="navbar-brand px-0" href="index.html">Questetra Support Tools</a></div><nav class="navdrawer-nav"><a class="nav-item nav-link" href="ui-decorator.html"><i class="material-icons mr-2">style</i>ガイドパネル デコレータ</a><a class="nav-item nav-link active" href="ui-decorator.html"><i class="material-icons mr-2">code</i>シンプル HTMLエディタ</a><!--div.navdrawer-divider--><!--p.navdrawer-subheader--><!--  |Navdrawer subheader--></nav></div></div><div class="drawer-container-layout"><div class="container-fluid"><div class="row"><div class="col"><nav aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li><li class="breadcrumb-item active" aria-current="page">シンプル HTMLエディタ</li></ol></nav><h2><i class="material-icons mr-2">code</i>シンプル HTMLエディタ</h2></div></div><div class="row" style="margin-bottom:40px;"><div class="col"><p style="margin:20px 0 20px 0;">HTMLコードを作成できる、シンプルなエディタです。<br>「ガイドパネル」で記載する説明文を、分かりやすく工夫することができます。</p></div></div><div class="row" style="margin-bottom:40px;"><div class="col"><div class="form-group"><trix-editor input="html">https://jsfiddle.net/javan/egg7fgvv/</trix-editor></div><div class="form-group"><label for="html">HTMLコード（コピー用）</label><textarea class="form-control" id="html" readonly style="color:black;background-color:#F5F5F5;">Hallo Questetra</textarea></div></div></div><div class="row" style="margin-bottom:40px;"><div class="col"><h2 id="usage">関連情報</h2><ul><li><a href="https://questetra.zendesk.com/hc/ja/articles/360002245252-M213">M213: 処理フォーム画面をデコレーションする（HTML/JavaScript）</a></li></ul></div></div></div></div><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script><script src="../js/material.min.js"></script><script src="../js/responsiveDrawer.js"></script><script>/* https://jsfiddle.net/javan/egg7fgvv/ */
+Trix.config.textAttributes.red = { 
+ style: { color: "#D32F2F" },
+ parser: function(element) {
+   return element.style.color === "red"
+ },
+ inheritable: true
+}
+Trix.config.textAttributes.pink = { 
+ style: { color: "#C2185B" },
+ parser: function(element) {
+   return element.style.color === "pink"
+ },
+ inheritable: true
+}
+Trix.config.textAttributes.purple = { 
+ style: { color: "#7B1FA2" },
+ parser: function(element) {
+   return element.style.color === "purple"
+ },
+ inheritable: true
+}
+Trix.config.textAttributes.indigo = { 
+ style: { color: "#303F9F" },
+ parser: function(element) {
+   return element.style.color === "indigo"
+ },
+ inheritable: true
+}
+Trix.config.textAttributes.blue = { 
+ style: { color: "#1976D2" },
+ parser: function(element) {
+   return element.style.color === "blue"
+ },
+ inheritable: true
+}
+Trix.config.textAttributes.cyan = { 
+ style: { color: "#0097A7" },
+ parser: function(element) {
+   return element.style.color === "cyan"
+ },
+ inheritable: true
+}
+Trix.config.textAttributes.green = { 
+ style: { color: "#388E3C" },
+ parser: function(element) {
+   return element.style.color === "green"
+ },
+ inheritable: true
+}
+Trix.config.textAttributes.orange = { 
+ style: { color: "#EF6C00" },
+ parser: function(element) {
+   return element.style.color === "orange"
+ },
+ inheritable: true
+}
+addEventListener("trix-initialize", function(event) {
+ let a = '<button type="button" class="trix-button" data-trix-attribute="red">red</button>'
+ + '<button type="button" class="trix-button" data-trix-attribute="pink">pink</button>'
+ + '<button type="button" class="trix-button" data-trix-attribute="purple">purple</button>'
+ + '<button type="button" class="trix-button" data-trix-attribute="indigo">indigo</button>'
+ + '<button type="button" class="trix-button" data-trix-attribute="blue">blue</button>'
+ + '<button type="button" class="trix-button" data-trix-attribute="cyan">cyan</button>'
+ + '<button type="button" class="trix-button" data-trix-attribute="green">green</button>'
+ + '<button type="button" class="trix-button" data-trix-attribute="orange">orange</button>';
+ event.target.toolbarElement.querySelector(".trix-button-group--text-tools").insertAdjacentHTML("beforeend", a)
+})</script></body></html>
